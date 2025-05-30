@@ -1442,7 +1442,7 @@ endef
 TARGET_DEVICES += oraybox_x3a
 
 define Device/phicomm_k2p
-  IMAGE_SIZE := 15744k
+  IMAGE_SIZE := 32448k
   DEVICE_VENDOR := Phicomm
   DEVICE_MODEL := K2P
   SUPPORTED_DEVICES += k2p
