@@ -5,7 +5,7 @@
 
 / {
 	compatible = "phicomm,k2p", "mediatek,mt7621-soc";
-	model = "Phicomm K2P";
+	model = "西加云杉 3300-10";
 
 	aliases {
 		led-boot = &led_blue;
@@ -19,17 +19,17 @@
 
 		stat_r {
 			label = "red:status";
-			gpios = <&gpio 13 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpio 3 GPIO_ACTIVE_LOW>;
 		};
 
 		stat_y {
 			label = "yellow:status";
-			gpios = <&gpio 14 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio 4 GPIO_ACTIVE_LOW>;
 		};
 
 		led_blue: stat_b {
 			label = "blue:status";
-			gpios = <&gpio 15 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio 23 GPIO_ACTIVE_LOW>;
 		};
 	};
 
@@ -38,7 +38,7 @@
 
 		reset {
 			label = "reset";
-			gpios = <&gpio 3 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio 18 GPIO_ACTIVE_LOW>;
 			linux,code = <KEY_RESTART>;
 		};
 	};
@@ -84,7 +84,7 @@
 			partition@a0000 {
 				compatible = "denx,uimage";
 				label = "firmware";
-				reg = <0xa0000 0xf60000>;
+				reg = <0xa0000 0x1fb0000>;
 			};
 		};
 	};
@@ -111,7 +111,7 @@
 };
 
 &gsw {
-	mediatek,portmap = "llllw";
+	mediatek,portmap = "wllll";
 	status = "okay";
 };
 
