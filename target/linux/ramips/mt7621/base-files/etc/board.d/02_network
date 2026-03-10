@@ -90,15 +90,12 @@ ramips_setup_interfaces()
 		;;
 	huasifei,ws1208v2|\
 	jcg,y2|\
+	phicomm,k2p|\
 	leigod,a7000|\
 	xiaoyu,xy-c5|\
 	zte,e8820s)
 		ucidef_add_switch "switch0" \
 			"0:lan" "1:lan" "2:lan" "3:lan" "4:wan" "6u@eth0" "5u@eth1"
-		;;
-    phicomm,k2p) 
-	    nucidef_add_switch "switch0" \
-			"0:wan" "1:lan" "2:lan" "3:lan" "4:lan" "6u@eth0" "5u@eth1"
 		;;
 	huasifei,mt7621dtu)
 		ucidef_add_switch "switch0" \
