@@ -19,7 +19,7 @@
 
 		stat_r {
 			label = "red:status";
-			gpios = <&gpio 3 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpio 3 GPIO_ACTIVE_LOW>;
 		};
 
 		stat_y {
@@ -84,7 +84,7 @@
 			partition@a0000 {
 				compatible = "denx,uimage";
 				label = "firmware";
-				reg = <0xa0000 0x1fb00000>;
+				reg = <0xa0000 0x1fb0000>;
 			};
 		};
 	};
