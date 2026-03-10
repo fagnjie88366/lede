@@ -5,7 +5,7 @@
 
 / {
 	compatible = "xiaoyu,xy-c5", "mediatek,mt7621-soc";
-	model = "XiaoYu XY-C5";
+	model = "西加云杉 AC8210";
 
 	aliases {
 		led-boot = &led_sys;
@@ -25,7 +25,7 @@
 
 		led_sys: sys {
 			label = "green:sys";
-			gpios = <&gpio 7 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio 15 GPIO_ACTIVE_LOW>;
 		};
 	};
 
